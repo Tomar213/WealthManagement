@@ -5,7 +5,7 @@
 </head>
 <html>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
   <a class="navbar-brand" href="#">ALL MONEY SOLN.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,7 @@
     </form>
   </div>
 </nav>
-<h2>Hello World!</h2>
+<img src="img/banner0.jpg" class="img-fluid" alt="Responsive image">
+<img alt="" src="img/banner1.jpg" class="img-fluid" alt="Responsive image">
 </body>
 </html>
