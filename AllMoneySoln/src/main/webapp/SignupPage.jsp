@@ -37,6 +37,7 @@ position:relative;
   max-width: 800px;
   padding: 20px;
   background-color: #ffffff;
+  background-image: linear-gradient(white, grey);
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -103,10 +104,10 @@ button:hover {
 </head>
 
 <body>
-
+	
    <div class="container">
     <form action="#" method="POST" class="registration-form">
-      <h2>Registration</h2>
+      <h2>Personal Information</h2>
       <div class="form-group">
         <label for="username"> First Name</label>
         <input type="text" id="username" name="username" required>
@@ -128,6 +129,10 @@ button:hover {
         <label for="username">Age</label>
         <input type="text" id="username" name="username" required>
       </div>
+                  <div class="form-group">
+        <label for="username">Date of Birth</label>
+        <input type="text" id="username" name="username" required>
+      </div>
             <div class="form-group" style="position:in-line;">
         <label for="username">Gender</label>
         <label>Male</label>
@@ -136,6 +141,15 @@ button:hover {
         <input type="radio"  name="username" required>
         <label>Others</label>
         <input type="radio"  name="username" required>
+      </div>
+      <div class="form-group">
+            <label for="username">Account Type</label>
+            <select >
+                    <option value="1" >Choose Option</option>
+                    <option value="2">Savings Account</option>
+                    <option value="3">Current Account</option>
+                    <option value="4">Zero Balance Acc.</option>
+                  </select>     
       </div>
             <div class="form-group">
         <label for="username">Occupation</label>
@@ -154,7 +168,12 @@ button:hover {
         
       </div>
             <div class="form-group">
-        <label for="username"> Current City</label>
+        <label for="username"> Current State and City</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+     
+            <div class="form-group">
+        <label for="username">Pin Code</label>
         <input type="text" id="username" name="username" required>
       </div>
       <div class="form-group">
@@ -166,7 +185,7 @@ button:hover {
         <input type="password" id="password" name="password" required>
       </div>
       <div class="form-group">
-        <button type="submit">Register</button>
+        <button type="submit"> <a href="SignUp2.jsp">Next</a> </button>
       </div>
     </form>
   </div>
