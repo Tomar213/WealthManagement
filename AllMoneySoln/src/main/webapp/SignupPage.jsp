@@ -8,10 +8,169 @@
 <title>SignUp Page</title>
 <style>
 
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background-image: url("img/signbg1.jpg");
+background-position:center;
+ background-size: cover;
+position: relative;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: auto;
+}
+
+.container {
+position:relative;
+	top:8px;
+  width: 100%;
+  border: solid 5px grey;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 </style>
 </head>
+
 <body>
 
+   <div class="container">
+    <form action="#" method="POST" class="registration-form">
+      <h2>Registration</h2>
+      <div class="form-group">
+        <label for="username"> First Name</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+            <div class="form-group">
+        <label for="username">Last Name</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+            <div class="form-group">
+        <label for="username">Father's Name</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+       
+            <div class="form-group">
+        <label for="username">Mother's Name</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+            <div class="form-group">
+        <label for="username">Age</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+            <div class="form-group" style="position:in-line;">
+        <label for="username">Gender</label>
+        <label>Male</label>
+        <input type="radio"  name="username" required>
+        <label>Female</label>
+        <input type="radio"  name="username" required>
+        <label>Others</label>
+        <input type="radio"  name="username" required>
+      </div>
+            <div class="form-group">
+        <label for="username">Occupation</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+            <div class="form-group">
+            <label for="username">Blood Group</label>
+            <select >
+                    <option value="1" >Choose option</option>
+                    <option value="2">A+</option>
+                    <option value="3">B+</option>
+                    <option value="4">O</option>
+                  </select>
+                 
+        
+        
+      </div>
+            <div class="form-group">
+        <label for="username"> Current City</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mobile No</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </div>
 </body>
+
 </html>
     
