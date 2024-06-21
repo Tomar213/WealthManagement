@@ -7,6 +7,9 @@ display:inline-block;
 width: 100px;
     height: 50px
 }
+.namee{
+
+}
 </style>
 <title>ALL MONEY SOLUTION</title>
 </head>
@@ -39,7 +42,7 @@ width: 100px;
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link " href="#">Business Login</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -50,6 +53,10 @@ width: 100px;
 </nav>
 <div>
 <img src="img/banner0.jpg" class="img-fluid" alt="Responsive image">
+</div>
+<div class ="namee">
+<h1>All Money Solution..</h1>
+<p>Here we Manage Wealth for you , Family or Business</p>
 </div>
 <img alt="" src="img/banner1.jpg" class="img-fluid" alt="Responsive image">
 

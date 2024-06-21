@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>SignUp part II</title>
 
 <style>
 
@@ -28,8 +28,9 @@ body {
 }
 .container {
   display: flex;
-  height: 700px;
+  height: 100%;
   margin:60px;
+  margin-bottom: 60px;
   width: 1000px;
 }
 
@@ -43,13 +44,13 @@ body {
 .login {
   font-size: 20px;
   font-weight: 900;
-  margin: 50px 40px 40px;
+  margin: 30px 40px 10px;
 }
 .eula {
   color: #999;
   font-size: 14px;
   line-height: 1.5;
-  margin: 40px;
+  margin: 10px;
 }
 .right {
 display:flex;
@@ -61,20 +62,18 @@ flex-wrap:wrap;
  top:20px;
 
   width: 100%;
-  height:90%;
+  height:100%;
 }
 
-path {
-  fill: none;
-  stroke: url(#linearGradient);;
-  stroke-width: 4;
-  stroke-dasharray: 240 1386;
-}
 .form {
-  margin: 40px;
+  margin: 8px;
   position: absolute;
-  width:100%;
-  height:100%;
+  width:40%;
+  height:80%;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  
 }
 label {
   color:  #c2c2c5;
@@ -87,24 +86,28 @@ label {
 input {
   
   border: 0;
-  color: #f2f2f2;
+  color: black;
   font-size: 10px;
   height: 30px;
   line-height: 30px;
   outline: none !important;
-  width: 25%;
+  width: 250px;
 }
 .tt{
   
   border: 0;
   color: #f2f2f2;
   font-size: 10px;
-  height: 30px;
+  height: 45px;
   line-height: 30px;
   outline: none !important;
-  width: 25%;
+  width: 250px;
 }
-
+.submit{
+border:solid 2px grey;
+padding:10px;
+margin:10px;
+}
 
 
 
@@ -134,7 +137,9 @@ input {
         <input type="number" id="email">
         <label for="email">Unique Mark</label>
         <input type="email" id="email">
-        <input type="submit" id="submit" value="Submit">
+        <button  type="submit"  class="submit"><a href="#" >Submit<a/></button>
+        <button  type="submit"  class="submit"> <a href="#"  >Reset</a> </button>
+        <button  type="submit"  class="submit"><a href="SignupPage.jsp"  >Previous Page</a></button>
       </div>
     </div>
   </div>
