@@ -14,22 +14,25 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
 <dependency>
     <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
+    <artifactId>spring-web</artifactId>
     <version>6.1.8</version>
 </dependency>
- 
- <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+
 <dependency>
     <groupId>com.mysql</groupId>
     <artifactId>mysql-connector-j</artifactId>
     <version>8.3.0</version>
 </dependency>
 
-    
+
+  	<dependency>
+  		<groupId>wealthMang</groupId>
+  		<artifactId>finance</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
   <build>
     <finalName>AllMoneySoln</finalName>
