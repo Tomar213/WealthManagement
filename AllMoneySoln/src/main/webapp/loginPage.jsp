@@ -142,7 +142,7 @@ color:yellow;}
   <div class="login-container">
  
     <form class="login-form">
-      <h2>Login</h2>
+      <h2> Individual Login</h2>
       <div class="input-group">
         <label for="account-number">User ID</label>
         <input type="text" id="account-number" name="account-number" required>
