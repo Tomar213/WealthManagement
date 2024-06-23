@@ -37,14 +37,14 @@ width: 100px;
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style=" padding-left:40px">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="home">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#">Business Login</a>
+        <a class="nav-link " href="home">Business Login</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
