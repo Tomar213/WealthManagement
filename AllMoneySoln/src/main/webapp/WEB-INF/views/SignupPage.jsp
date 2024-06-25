@@ -106,41 +106,41 @@ button:hover {
 <body>
 	
    <div class="container">
-    <form action="#" method="POST" class="registration-form">
+    <form action="register" method="get" class="registration-form">
       <h2>Personal Information</h2>
       <div class="form-group">
         <label for="username"> First Name</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="firstname" >
       </div>
             <div class="form-group">
         <label for="username">Last Name</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="lastname" >
       </div>
             <div class="form-group">
         <label for="username">Father's Name</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="fathername" >
       </div>
        
             <div class="form-group">
         <label for="username">Mother's Name</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="mothername" >
       </div>
             <div class="form-group">
         <label for="username">Age</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="age">
       </div>
                   <div class="form-group">
         <label for="username">Date of Birth</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="dob" >
       </div>
             <div class="form-group" style="position:in-line;">
         <label for="username">Gender</label>
         <label>Male</label>
-        <input type="radio"  name="username" required>
+        <input type="radio"  name="username" >
         <label>Female</label>
-        <input type="radio"  name="username" required>
+        <input type="radio"  name="username" >
         <label>Others</label>
-        <input type="radio"  name="username" required>
+        <input type="radio"  name="username" >
       </div>
       <div class="form-group">
             <label for="username">Account Type</label>
@@ -153,7 +153,7 @@ button:hover {
       </div>
             <div class="form-group">
         <label for="username">Occupation</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="occupation">
       </div>
             <div class="form-group">
             <label for="username">Blood Group</label>
@@ -169,23 +169,23 @@ button:hover {
       </div>
             <div class="form-group">
         <label for="username"> Current State and City</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="city" >
       </div>
      
             <div class="form-group">
         <label for="username">Pin Code</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="pincode">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" >
       </div>
       <div class="form-group">
-        <label for="password">Mobile No</label>
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
       </div>
       <div class="form-group">
-        <button type="submit"> <a href="SignUp2.jsp">Next</a> </button>
+        <button type="submit"> Next </button>
       </div>
     </form>
   </div>
