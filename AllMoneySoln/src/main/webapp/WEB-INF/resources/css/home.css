@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+.bdy{
+margin-right:10px;
+margin-left:10px;
+background: #f8eeb4 ;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+
+.p1 {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+  margin-left:5px;
+}
+.container2 {
+font-family:'Roboto';
+  background-color: #131417;
+  color: white;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
+    box-shadow:10px 10px 17px 0 rgba(0, 0, 0, 0.9), 10px 10px 17px 0 rgba(0, 0, 0, 0.50);
+      opacity: 0;
+    animation: fadeIn 2.3s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation  div  div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 1.5rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 5s  infinite;
+  animation-delay:3s;
+  
+  
+}
+
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
+
+
+
+.logo{
+display:inline-block;
+width: 100px;
+    height: 50px
+}
+
+
+.container1 {
+  position: relative;  
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+}
+.namee{
+display: flex;
+font-family:'Roboto';
+width:65%;
+background:#FAEBD7;
+
+  position: absolute;
+  top: 88%;
+
+}
+.namee p{
+      font-size: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typewriter 2s steps(50) 4 alternate,
+                blink 800ms steps(50) 4 normal;
+             
+            border-right: 3px solid black;
+            height:40px;
+            
+}
+@keyframes typewriter {
+            from {
+                width: 0%;
+            }
+ 
+            to {
+                width: 50%;
+            }
+        }
+ 
+        @keyframes blink {
+            from {
+                border-color: green;
+            }
+ 
+            to {
+                border-color: transparent;
+            }
+        }
+
+.homrimg { 
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+section div a:link,section div a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+section div a:hover, section div a:active {
+  background-color: green;
+  color: white;
+}
