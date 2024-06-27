@@ -47,6 +47,7 @@ header {
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%);
+    
 }
 
 .box h2 {

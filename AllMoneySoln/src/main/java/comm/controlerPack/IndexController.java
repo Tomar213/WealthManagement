@@ -28,6 +28,39 @@ public class IndexController {
 		
 		return "home";
 	}
+	@RequestMapping("/AboutUs")
+	public String AboutUs() {
+		
+		
+		return "AboutUs";
+	}
+
+	@RequestMapping("/BusinessRegistration")
+	public String BusinessRegistration() {
+		
+		
+		return "BusinessRegistration";
+	}
+	
+	@RequestMapping("/individualLogin")
+	public String individuallogin() {
+		
+		
+		return "loginPage";
+	}
+	
+	@RequestMapping("/BusinessLogin")
+	public String BusinessLogin() {
+		return "BusinessLogin";
+	}
+	@RequestMapping("/business")
+	public String BusinessPage() {
+		return "BusinessPage";
+	}
+	@RequestMapping("/services")
+	public String services() {
+		return "Services";
+	}
 	
 	
 	@RequestMapping("/signup")

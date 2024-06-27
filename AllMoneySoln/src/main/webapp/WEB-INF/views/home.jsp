@@ -15,8 +15,8 @@
 <body>
 <div class="bdy">
 <nav  class="navbar navbar-expand-lg navbar-light bg-light" >
-  <a class="navbar-brand" href="home"></a>
-  <img alt="logo" class="logo" src="<c:url value="/resources/img/logo.png"/>">
+  
+  <a href="home"><img alt="logo" class="logo" src="<c:url value="/resources/img/logo.png"  />"   ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -24,7 +24,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto" >
       <li class="nav-item active" style=" padding-left:40px">
-        <a class="nav-link" href="loginPage.jsp">Login<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="individualLogin">Login<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" style=" padding-left:40px">
         <a class="nav-link" href="signup">SignUp</a>
@@ -41,7 +41,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="home">Business Login</a>
+        <a class="nav-link " href="BusinessLogin">Business Login</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -81,7 +81,7 @@
 <!-- first block -->
 <section class="text-black-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-col ">
-    <div class="lg:w-9/10 mx-auto" style="border:solid 2px white;" >
+    <div class="lg:w-9/10 mx-auto" style="border:solid 2px white;  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " >
       <div class="rounded-lg h-64 overflow-hidden">
         <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/banner1.jpg"/>">
       </div>
@@ -96,7 +96,7 @@
           <div class="flex flex-col items-center text-center justify-center">
             <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Personal Wealth Management</h2>
             <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-            <p class="text-base">To manage your personal wealth ,it is recommended to use our individual wealth management features to keep the record of your wealth smartly</p>
+            <p class="text-base" style="font-size:20px">To manage your personal wealth ,it is recommended to use our individual wealth management features to keep the record of your wealth smartly</p>
           </div>
         </div>
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
@@ -113,9 +113,9 @@
 </section>
 
 <!-- 2nd block -->
-<section class="text-gray-600 body-font">
+<section class="text-white-600 body-font" style="background:#cfb4f8;" >
   <div class="container flex flex-wrap px-5 py-15 mx-auto items-center">
-    <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
+    <div class="md:w-1/3 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">WHY ALLMONEYSOLN.</h1>
       <p class="leading-relaxed text-base">Managing your wealth at a personal level is crucial for achieving financial stability and long-term security. Ensuring that your financial goals align with your life aspirations. Personal wealth management helps you prepare for emergencies, avoid unnecessary debt, and capitalize on opportunities to grow your assets. By maintaining control over your finances, you can reduce stress, enjoy greater peace of mind, and build a solid foundation for a prosperous future..</p>
       <a class="text-yellow-500 inline-flex items-center mt-4">Learn More
@@ -159,9 +159,9 @@
 <!-- 3rd block -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto flex flex-col">
-    <div class="lg:w-4/6 mx-auto">
+    <div class="lg:w-9/10 mx-auto" style="  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="rounded-lg h-64 overflow-hidden">
-        <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/business.jpg"/>">
       </div>
       <div class="flex flex-col sm:flex-row mt-10">
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
@@ -172,14 +172,14 @@
             </svg>
           </div>
           <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
-            <div class="w-12 h-1 bg-yellow-500 rounded mt-2 mb-4"></div>
-            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Business Wealth Management</h2>
+            <div class="w-12 h-1 bg-yellow-500 rounded mt-2 mb-4" ></div>
+            <p class="text-base" style="font-size:20px">Manage your cash flow needs with strategic financing and access flexible liquidity solutions using credit so you have funds available when required.</p>
           </div>
         </div>
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
-          <a class="text-yellow-500 inline-flex items-center">Learn More
+          <p class="leading-relaxed text-lg mb-4" style="font-size:25px">You have invested considerable “sweat equity” to make your business a success, and it can be difficult to juggle the demands of your company with your own financial planning needs. We work side-by-side with business owners to create a comprehensive and integrated plan for your personal and professional finances.</p>
+          <a class="text-yellow-500 inline-flex items-center" href="business">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -191,7 +191,7 @@
 </section>
 
 <!-- 4th block -->
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font" style="background:#cfb4f8;">
   <div class="container flex flex-wrap px-5 py-24 mx-auto items-center">
     <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-10 md:mb-0 pb-10 border-b border-gray-200">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
@@ -240,25 +240,15 @@
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="lg:w-4/6 mx-auto">
       <div class="rounded-lg h-64 overflow-hidden">
-        <img alt="content" class="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500">
+      <a href="explore" >
+        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/explore2.jpg"/>">
+      </a>
       </div>
       <div class="flex flex-col sm:flex-row mt-10">
-        <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-          <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Phoebe Caulfield</h2>
-            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-            <p class="text-base">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
-          </div>
-        </div>
+
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
-          <a class="text-indigo-500 inline-flex items-center">Learn More
+          <p class="leading-relaxed text-lg mb-4" style="font-size:20px;">If your business is driven by relationship-building, or wealth managers for whom personal interaction with end-customers is of the highest importance, ALL MONEY SOLN. Wealth Management is here for you. With it, you can accelerate your internal investment processes and deliver excellent experience for your employees while keeping the personal advisory service customer-oriented and of the highest quality..</p>
+          <a class="text-indigo-500 inline-flex items-center" href="services">EXPLORE
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -272,8 +262,8 @@
 <!-- 6th block -->
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
-    <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Raw Denim Heirloom Man Braid
-      <br class="hidden sm:block">Selfies Wayfarers
+    <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-gray-900 mb-20">Major Brand Collaborations
+      <br class="hidden sm:block">
     </h1>
     <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
       <div class="p-4 md:w-1/3 flex">
@@ -283,7 +273,7 @@
           </svg>
         </div>
         <div class="flex-grow pl-6">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">GROWW</h2>
           <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
           <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -301,7 +291,7 @@
           </svg>
         </div>
         <div class="flex-grow pl-6">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">NIFTY50</h2>
           <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
           <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -318,7 +308,7 @@
           </svg>
         </div>
         <div class="flex-grow pl-6">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">INVENTMENTOR</h2>
           <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
           <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -330,7 +320,7 @@
     </div>
   </div>
 </section>
-<img alt="" src="img/banner1.jpg" class="img-fluid" alt="Responsive ie">
+
 
 </div>
 <!-- Footer -->
