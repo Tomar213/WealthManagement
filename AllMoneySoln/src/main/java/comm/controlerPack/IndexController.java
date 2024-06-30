@@ -1,26 +1,33 @@
 package comm.controlerPack;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import comm.entity.Userdata;
 import comm.userService.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+
+
 
 
 @Controller
 public class IndexController {
+	@Autowired(required=true)
+	service serv;
 	
-	 Userdata user;
-	 
-	@Autowired
-	private service userservice;
+	
+	@GetMapping("/")
+	public String Home1() {
+		
+		
+		return "index";
+	}
 	
 	@RequestMapping("/home")
 	public String Home() {
@@ -81,7 +88,7 @@ public class IndexController {
 			return model;
 	}
 		
-		@RequestMapping(path = "/register",method=RequestMethod.GET)
+		@GetMapping("/register")
 		public String register(@ModelAttribute Userdata userdata , @RequestParam("firstname")String gn,@RequestParam("lastname") String ln){
 			System.out.println(userdata+gn+ln);
 			
@@ -90,9 +97,13 @@ public class IndexController {
 //			
 //			int r= dao.dataSave(user);
 			
-			int r= this.userservice.createuser(user);
-			
-			System.out.println(r+ "rows affected");
+			try {
+			serv.save(userdata);
+			}
+			catch(Exception e) {
+				System.out.println(e+"your exception");
+			}
+	
 			return "success";
 		}
 	

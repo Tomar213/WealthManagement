@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="<c:url value="/css/home.css"/>">
+  <link rel="stylesheet" href="<c:url value="/resources/css/home.css"/>">
 <title>ALL MONEY SOLUTION</title>
 </head>
 <html>
@@ -16,7 +16,7 @@
 <div class="bdy">
 <nav  class="navbar navbar-expand-lg navbar-light bg-light" >
   
-  <a href="home"><img alt="logo" class="logo" src="<c:url value="/img/logo.png"  />"   ></a>
+  <a href="home"><img alt="logo" class="logo" src="<c:url value="/resources/img/logo.png"  />"   ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -50,16 +50,15 @@
     </form>
   </div>
 </nav>
-<%--
 <div>
- <img src="<c:url value="/resources/img/img2.jpg"/>" class="img-fluid" alt="Responsive image">
+<%-- <img src="<c:url value="/resources/img/img2.jpg"/>" class="img-fluid" alt="Responsive image">
         <marquee behavior="scroll" direction="left">
-            <img class="homrimg" src="<c:url value="/img/homeimg.jpg"/>"
+            <img class="homrimg" src="<c:url value="/resources/img/homeimg.jpg"/>"
                  alt="GeeksforGeeks logo">
         </marquee>
 </div> --%>
 <div class="container1">
-  <img src="<c:url value="/img/img3.jpg"/>" alt="Cinque Terre" >
+  <img src="<c:url value="/resources/img/img3.jpg"/>" alt="Cinque Terre" >
   <div class="center">
   <main class="container2">
   <p class="p1">Hello 👋 we are</p>
@@ -84,7 +83,7 @@
   <div class="container px-5 py-24 mx-auto flex flex-col ">
     <div class="lg:w-9/10 mx-auto" style="border:solid 2px white;  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); " >
       <div class="rounded-lg h-64 overflow-hidden">
-        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/img/banner1.jpg"/>">
+        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/banner1.jpg"/>">
       </div>
       <div class="flex flex-col sm:flex-row mt-10"  >
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8"  style="border-right: solid 5px white;">
@@ -162,7 +161,7 @@
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="lg:w-9/10 mx-auto" style="  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
       <div class="rounded-lg h-64 overflow-hidden">
-        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/img/business.jpg"/>">
+        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/business.jpg"/>">
       </div>
       <div class="flex flex-col sm:flex-row mt-10">
         <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
@@ -242,7 +241,7 @@
     <div class="lg:w-4/6 mx-auto">
       <div class="rounded-lg h-64 overflow-hidden">
       <a href="explore" >
-        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/img/explore2.jpg"/>">
+        <img alt="content" class="object-cover object-center h-full w-full" src="<c:url value="/resources/img/explore2.jpg"/>">
       </a>
       </div>
       <div class="flex flex-col sm:flex-row mt-10">

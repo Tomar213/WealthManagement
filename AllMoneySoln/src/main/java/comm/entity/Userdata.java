@@ -1,27 +1,37 @@
 package comm.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
-@Table(name="trialtable")
+@Table(name="trialOne")
 public class Userdata {
 	
 	@Id
+	@Column
 	private String firstname;
 	
-	
+	@Column
 	private String lastname;
+	@Column
 	private String fathername;
+	@Column
 	private String mothername;
+	@Column
 	private int age;
+	@Column
 	private int dob;
+	@Column
 	private String occupation;
+	@Column
 	private String city;
+	@Column
 	private int pincode;
+	@Column
 	private String email;
+	@Column
 	private String password;
 	
 	public String getFirstname() {

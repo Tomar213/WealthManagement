@@ -127,11 +127,11 @@ button:hover {
       </div>
             <div class="form-group">
         <label for="username">Age</label>
-        <input type="text" id="username" name="age">
+        <input type="number" id="username" name="age">
       </div>
                   <div class="form-group">
         <label for="username">Date of Birth</label>
-        <input type="text" id="username" name="dob" >
+        <input type="number" id="username" name="dob" >
       </div>
             <div class="form-group" style="position:in-line;">
         <label for="username">Gender</label>
@@ -174,7 +174,7 @@ button:hover {
      
             <div class="form-group">
         <label for="username">Pin Code</label>
-        <input type="text" id="username" name="pincode">
+        <input type="number" id="username" name="pincode">
       </div>
       <div class="form-group">
         <label for="email">Email</label>
