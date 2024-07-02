@@ -102,7 +102,7 @@
         </div>
         <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
           <p class="leading-relaxed text-lg mb-4">Discover unparalleled financial freedom with our Personal Wealth Management System, meticulously designed to cater to all your financial needs. Seamlessly manage your transactions and money transfers with just a few clicks, ensuring your finances are always at your fingertips. Dive into detailed history checks to keep track of your spending and saving habits, empowering you with insights to make informed decisions. Our sophisticated investment tools guide you to grow your wealth smartly, while our  financial management features provide view of your assets and liabilities. Embrace the future of financial management and watch your wealth flourish with ease and confidence.</p>
-          <a class="text-indigo-500 inline-flex items-center" href="#" >START HERE
+          <a class="text-indigo-500 inline-flex items-center" href="individual" >START HERE
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>

@@ -1,7 +1,8 @@
-package comm.controlerPack;
+package comm.allMoneySoln.controlerPack;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,10 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import comm.entity.Userdata;
-import comm.userService.service;
-
-
+import comm.allMoneySoln.entity.Userdata;
+import comm.allMoneySoln.entity.userdata2;
+import comm.allMoneySoln.userService.service;
 
 
 
@@ -20,7 +20,7 @@ import comm.userService.service;
 public class IndexController {
 	@Autowired(required=true)
 	service serv;
-	
+
 	
 	@GetMapping("/")
 	public String Home1() {
@@ -68,6 +68,10 @@ public class IndexController {
 	public String services() {
 		return "Services";
 	}
+	@RequestMapping("/signup2")
+	public String signup2() {
+		return "SignUp2";
+	}
 	
 	
 	@RequestMapping("/signup")
@@ -76,6 +80,14 @@ public class IndexController {
 		
 		return "SignupPage";
 	}
+	
+	@GetMapping("/individual")
+	public String Individual() {
+		
+		
+		return "Individual";
+	}
+	
 	
 
 		@RequestMapping("/trial")
@@ -89,15 +101,19 @@ public class IndexController {
 	}
 		
 		@GetMapping("/register")
-		public String register(@ModelAttribute Userdata userdata , @RequestParam("firstname")String gn,@RequestParam("lastname") String ln){
-			System.out.println(userdata+gn+ln);
+		public String register(@ModelAttribute Userdata userdata,@ModelAttribute userdata2 userdata2 ){
+			System.out.println(userdata);
 			
 //			ClassPathXmlApplicationContext ac= new ClassPathXmlApplicationContext("Spring-servlet.xml");
 //			daoClas dao = ac.getBean("userdata",daoClas.class);
 //			
 //			int r= dao.dataSave(user);
+			 
 			
-			try {
+			
+			try {				
+				serv.save1(userdata2);
+				
 			serv.save(userdata);
 			}
 			catch(Exception e) {

@@ -1,15 +1,20 @@
-package comm.entity;
+package comm.allMoneySoln.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="trialOne")
+@Table(name="IndividualReg1")
 public class Userdata {
-	
+	 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	int id;
 	@Column
 	private String firstname;
 	
@@ -31,9 +36,15 @@ public class Userdata {
 	private int pincode;
 	@Column
 	private String email;
-	@Column
-	private String password;
 	
+	 
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFirstname() {
 		return firstname;
 	}
@@ -43,14 +54,20 @@ public class Userdata {
 	public String getLastname() {
 		return lastname;
 	}
+	@Override
+	public String toString() {
+		return "Userdata [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", fathername="
+				+ fathername + ", mothername=" + mothername + ", age=" + age + ", dob=" + dob + ", occupation="
+				+ occupation + ", city=" + city + ", pincode=" + pincode + ", email=" + email + "]";
+	}
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-	public String getFathertname() {
+	public String getFathername() {
 		return fathername;
 	}
-	public void setFathertname(String fathertname) {
-		this.fathername = fathertname;
+	public void setFathername(String fathername) {
+		this.fathername = fathername;
 	}
 	public String getMothername() {
 		return mothername;
@@ -94,18 +111,10 @@ public class Userdata {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	@Override
-	public String toString() {
-		return "Userdata [firstname=" + firstname + ", lastname=" + lastname + ", fathername=" + fathername
-				+ ", mothername=" + mothername + ", age=" + age + ", dob=" + dob + ", occupation=" + occupation
-				+ ", city=" + city + ", pincode=" + pincode + ", email=" + email + ", password=" + password + "]";
-	}
+
+
 	
+	@OneToOne
+	private userdata2 user2;
 
 }

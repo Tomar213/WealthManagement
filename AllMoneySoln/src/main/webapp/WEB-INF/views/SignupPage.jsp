@@ -180,10 +180,10 @@ button:hover {
         <label for="email">Email</label>
         <input type="email" id="email" name="email" >
       </div>
-      <div class="form-group">
+<!--       <div class="form-group">
         <label for="password">Password</label>
         <input type="password" id="password" name="password" required>
-      </div>
+      </div> -->
       <div class="form-group">
         <button type="submit"> Next </button>
       </div>

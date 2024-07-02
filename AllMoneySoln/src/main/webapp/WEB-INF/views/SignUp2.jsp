@@ -124,22 +124,25 @@ margin:10px;
     </div>
     <div class="right">
       
-      <div class="form">
-        <label for="email">Aadhar Card No.</label>
-        <input type="email" id="email">
-        <label for="email">Aadhar Card No.</label>
+      <div class="form" >
+      <form action="register">
+      
+        <label for="email" aadharNo>Aadhar Card No.</label>
+        <input type="Number" name="aadharNo" id="email" required>
+        <label for="email">Any Other id (if not Aadhar)</label>
         <input type="email" id="email">
         <label for="password">PAN Card No.</label>
-        <input  id="password">
+        <input  id="password" name="panNo" required>
         <label for="email">Full Address: </label>
-        <textarea class="tt"></textarea>
+        <textarea class="tt" name="address"></textarea>
         <label for="email">Annual Income</label>
-        <input type="number" id="email">
-        <label for="email">Unique Mark</label>
-        <input type="email" id="email">
-        <button  type="submit"  class="submit"><a href="#" >Submit<a/></button>
-        <button  type="submit"  class="submit"> <a href="#"  >Reset</a> </button>
-        <button  type="submit"  class="submit"><a href="SignupPage.jsp"  >Previous Page</a></button>
+        <input type="number" name="income" id="email">
+        <label for="email">Set Your Password</label>
+        <input type="password" name="password" id="email">
+        <button  type="submit"  class="submit" >Submit</button>
+        <button    class="submit"> <a href="#"  >Reset</a> </button>
+        <button    class="submit"><a href="SignupPage"  >Previous Page</a></button>
+        </form>
       </div>
     </div>
   </div>

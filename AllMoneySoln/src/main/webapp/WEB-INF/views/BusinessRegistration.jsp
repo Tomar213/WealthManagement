@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tailwind Starter Template - Multi Section Form / Scrollspy: Tailwind Toolbox</title>
+    <title>Register your business</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
@@ -78,7 +78,7 @@
     <!--Container-->
     <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
         <div class="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">
-            <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Menu</p>
+            <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">Business</p>
             <div class="block lg:hidden sticky inset-0">
                 <button id="menu-toggle" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-yellow-600 appearance-none focus:outline-none">
                     <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
                 <ul class="list-reset py-2 md:py-0">
                     <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent font-bold border-yellow-600">
                         <a href='#section1' class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
-                            <span class="pb-1 md:pb-0 text-sm">Section 1</span>
+                            <span class="pb-1 md:pb-0 text-sm">section 1</span>
                         </a>
                     </li>
                     <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
@@ -134,8 +134,8 @@
 
             <!--Card-->
             <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-                <li>Using the CDN version of <a class="underline text-yellow-600" href="https://github.com/tailwindcss/custom-forms" target="_blank">Tailwind Custom Forms</a></li>
-                <li>This template uses jQuery for scrollspy</li>
+                <li>Working with us here <a class="underline text-yellow-600" href="https://github.com/tailwindcss/custom-forms" target="_blank">Tailwind Custom Forms</a></li>
+                <li>Please add the details of which you have proof</li>
             </div>
             <!--/Card-->
 
@@ -153,27 +153,27 @@
                     <div class="md:flex mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" for="my-textfield">
-                                Text Field
+                                Business Name
                             </label>
                         </div>
                         <div class="md:w-2/3">
                             <input class="form-input block w-full focus:bg-white" id="my-textfield" type="text" value="">
-                            <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
+                            <p class="py-2 text-sm text-gray-600">your business line</p>
                         </div>
                     </div>
 
                     <div class="md:flex mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" for="my-select">
-                                Drop down field
+                                Segement
                             </label>
                         </div>
                         <div class="md:w-2/3">
                             <select name="" class="form-select block w-full focus:bg-white" id="my-select">
-                                <option value="Default">Default</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                                <option value="C">C</option>
+                                <option value="Default">StartUp</option>
+                                <option value="A">Transport</option>
+                                <option value="B">Education</option>
+                                <option value="C">Health</option>
                             </select>
 
                             <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
@@ -183,7 +183,7 @@
                     <div class="md:flex mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" for="my-textarea">
-                                Text Area
+                                Detailed Discription of work
                             </label>
                         </div>
                         <div class="md:w-2/3">
@@ -261,18 +261,18 @@
                     <div class="md:flex mb-6">
                         <div class="md:w-1/3">
                             <label class="block text-gray-600 font-bold md:text-left mb-3 md:mb-0 pr-4" for="my-radio">
-                                Radio Buttons
+                               Registered with Government
                             </label>
                         </div>
                         <div class="md:w-2/3">
                             <div class="mt-2">
                                 <label class="inline-flex items-center">
                                     <input type="radio" class="form-radio text-indigo-600" name="radioOption" value="A">
-                                    <span class="ml-2">Radio A</span>
+                                    <span class="ml-2">Yes</span>
                                 </label>
                                 <label class="inline-flex items-center ml-6">
                                     <input type="radio" class="form-radio" name="radioOption" value="B">
-                                    <span class="ml-2">Radio B</span>
+                                    <span class="ml-2">No</span>
                                 </label>
                             </div>
                             <p class="py-2 text-sm text-gray-600">add notes about populating the field</p>
@@ -339,12 +339,10 @@
                     </button>
 
                     <button class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded mr-4" type="button">
-                        Additional Action
+                        Register
                     </button>
 
-                    <button class="shadow bg-yellow-100 hover:bg-yellow-200 focus:shadow-outline focus:outline-none text-gray-700 font-bold py-2 px-4 rounded" type="button">
-                        Additional Action
-                    </button>
+
 
                 </div>
 
@@ -356,7 +354,7 @@
 
         <!--Back link -->
         <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-gray-600 px-4 py-24 mb-12">
-          <span class="text-base text-yellow-600 font-bold">&lt;</span> <a href="#" class="text-base md:text-sm text-yellow-600 font-bold no-underline hover:underline">Back link</a>
+          <span class="text-base text-yellow-600 font-bold">&lt;</span> <a href="#" class="text-base md:text-sm text-yellow-600 font-bold no-underline hover:underline">Up</a>
          </div>
 
       </div>
