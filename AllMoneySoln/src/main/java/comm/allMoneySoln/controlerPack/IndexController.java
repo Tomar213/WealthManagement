@@ -1,11 +1,14 @@
 package comm.allMoneySoln.controlerPack;
 
 
+import java.util.Random;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -100,28 +103,41 @@ public class IndexController {
 			return model;
 	}
 		
-		@GetMapping("/register")
+		
+		@PostMapping("/submit")
+		public String savedata(@ModelAttribute userdata2 userdata2) {
+			serv.save1(userdata2);
+			
+			
+			
+			return "success";
+			
+		}
+		
+		@PostMapping("/register")
 		public String register(@ModelAttribute Userdata userdata,@ModelAttribute userdata2 userdata2 ){
+			Random ran = new Random();
+			long first = (ran.nextLong()% 90000L)+5040000;
+	        String accNo=""+Math.abs(first);
+	        userdata.setAcc_no(accNo);
+	        serv.save(userdata);
+	        userdata2.setUserdata(userdata);
+	        
 			System.out.println(userdata);
+			
+			serv.save1(userdata2);
 			
 //			ClassPathXmlApplicationContext ac= new ClassPathXmlApplicationContext("Spring-servlet.xml");
 //			daoClas dao = ac.getBean("userdata",daoClas.class);
 //			
 //			int r= dao.dataSave(user);
-			 
-			
-			
-			try {				
-				serv.save1(userdata2);
-				
-			serv.save(userdata);
-			}
-			catch(Exception e) {
-				System.out.println(e+"your exception");
-			}
-	
+			 	
+			/* serv.save(userdata); */
+		
 			return "success";
 		}
+		
+		
 	
 	@Controller
 	public class trial {

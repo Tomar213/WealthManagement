@@ -106,7 +106,7 @@ button:hover {
 <body>
 	
    <div class="container">
-    <form action="register" method="get" class="registration-form">
+    <form action="signup2" method="post" class="registration-form">
       <h2>Personal Information</h2>
       <div class="form-group">
         <label for="username"> First Name</label>

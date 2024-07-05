@@ -125,7 +125,7 @@ margin:10px;
     <div class="right">
       
       <div class="form" >
-      <form action="register">
+      <form action="register" method="post">
       
         <label for="email" aadharNo>Aadhar Card No.</label>
         <input type="Number" name="aadharNo" id="email" required>

@@ -1,5 +1,7 @@
 package comm.allMoneySoln.entity;
 
+import java.util.Random;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -13,8 +15,21 @@ import jakarta.persistence.Table;
 public class Userdata {
 	 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int id;
+	private String acc_no;
+	
+	
+	
+	public String getAcc_no() {
+		return acc_no;
+		
+	}
+	
+	public void setAcc_no(String acc_no) {
+
+		this.acc_no= acc_no;
+
+	}
+	
 	@Column
 	private String firstname;
 	
@@ -38,13 +53,9 @@ public class Userdata {
 	private String email;
 	
 	 
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	/*
+	 * public int getId() { return id; } public void setId(int id) { this.id = id; }
+	 */
 	public String getFirstname() {
 		return firstname;
 	}
@@ -56,7 +67,7 @@ public class Userdata {
 	}
 	@Override
 	public String toString() {
-		return "Userdata [id=" + id + ", firstname=" + firstname + ", lastname=" + lastname + ", fathername="
+		return "Userdata [Acc NO=" + acc_no + ", firstname=" + firstname + ", lastname=" + lastname + ", fathername="
 				+ fathername + ", mothername=" + mothername + ", age=" + age + ", dob=" + dob + ", occupation="
 				+ occupation + ", city=" + city + ", pincode=" + pincode + ", email=" + email + "]";
 	}
@@ -113,8 +124,6 @@ public class Userdata {
 	}
 
 
-	
-	@OneToOne
-	private userdata2 user2;
+
 
 }
